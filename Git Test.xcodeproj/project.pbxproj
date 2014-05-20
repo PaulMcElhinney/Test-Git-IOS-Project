@@ -21,6 +21,7 @@
 		83677E67192BFC6300E5F5F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83677E49192BFC6300E5F5F5 /* UIKit.framework */; };
 		83677E6F192BFC6300E5F5F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 83677E6D192BFC6300E5F5F5 /* InfoPlist.strings */; };
 		83677E71192BFC6300E5F5F5 /* Git_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83677E70192BFC6300E5F5F5 /* Git_TestTests.m */; };
+		83677EC9192C06E400E5F5F5 /* PGMTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 83677EC8192C06E400E5F5F5 /* PGMTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 83677E41192BFC6300E5F5F5;
 			remoteInfo = "Git Test";
+		};
+		83677EC3192C03DB00E5F5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83677EBE192C03DB00E5F5F5 /* PGMTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83677E86192C03DB00E5F5F5;
+			remoteInfo = PGMTest;
+		};
+		83677EC5192C03DB00E5F5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83677EBE192C03DB00E5F5F5 /* PGMTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83677EA7192C03DB00E5F5F5;
+			remoteInfo = PGMTestTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +68,9 @@
 		83677E6C192BFC6300E5F5F5 /* Git TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Git TestTests-Info.plist"; sourceTree = "<group>"; };
 		83677E6E192BFC6300E5F5F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		83677E70192BFC6300E5F5F5 /* Git_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Git_TestTests.m; sourceTree = "<group>"; };
+		83677EBE192C03DB00E5F5F5 /* PGMTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PGMTest.xcodeproj; path = PGMTest/PGMTest.xcodeproj; sourceTree = "<group>"; };
+		83677EC7192C06E400E5F5F5 /* PGMTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGMTest.h; path = ../PGMTest.h; sourceTree = "<group>"; };
+		83677EC8192C06E400E5F5F5 /* PGMTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGMTest.m; path = ../PGMTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +130,14 @@
 		83677E4B192BFC6300E5F5F5 /* Git Test */ = {
 			isa = PBXGroup;
 			children = (
+				83677EBE192C03DB00E5F5F5 /* PGMTest.xcodeproj */,
 				83677E54192BFC6300E5F5F5 /* PGMAppDelegate.h */,
 				83677E55192BFC6300E5F5F5 /* PGMAppDelegate.m */,
 				83677E57192BFC6300E5F5F5 /* Main.storyboard */,
 				83677E5A192BFC6300E5F5F5 /* PGMViewController.h */,
 				83677E5B192BFC6300E5F5F5 /* PGMViewController.m */,
+				83677EC7192C06E400E5F5F5 /* PGMTest.h */,
+				83677EC8192C06E400E5F5F5 /* PGMTest.m */,
 				83677E5D192BFC6300E5F5F5 /* Images.xcassets */,
 				83677E4C192BFC6300E5F5F5 /* Supporting Files */,
 			);
@@ -150,6 +171,15 @@
 				83677E6D192BFC6300E5F5F5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83677EBF192C03DB00E5F5F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83677EC4192C03DB00E5F5F5 /* PGMTest.app */,
+				83677EC6192C03DB00E5F5F5 /* PGMTestTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +245,12 @@
 			mainGroup = 83677E39192BFC6300E5F5F5;
 			productRefGroup = 83677E43192BFC6300E5F5F5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 83677EBF192C03DB00E5F5F5 /* Products */;
+					ProjectRef = 83677EBE192C03DB00E5F5F5 /* PGMTest.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				83677E41192BFC6300E5F5F5 /* Git Test */,
@@ -222,6 +258,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		83677EC4192C03DB00E5F5F5 /* PGMTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PGMTest.app;
+			remoteRef = 83677EC3192C03DB00E5F5F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		83677EC6192C03DB00E5F5F5 /* PGMTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = PGMTestTests.xctest;
+			remoteRef = 83677EC5192C03DB00E5F5F5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		83677E40192BFC6300E5F5F5 /* Resources */ = {
@@ -249,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83677EC9192C06E400E5F5F5 /* PGMTest.m in Sources */,
 				83677E5C192BFC6300E5F5F5 /* PGMViewController.m in Sources */,
 				83677E52192BFC6300E5F5F5 /* main.m in Sources */,
 				83677E56192BFC6300E5F5F5 /* PGMAppDelegate.m in Sources */,
